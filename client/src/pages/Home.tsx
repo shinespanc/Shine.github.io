@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { BookingButton } from "@/components/BookingButton";
 import { ArrowRight, Star, Sparkles, Heart } from "lucide-react";
 import { Link } from "wouter";
+import waxingImg from "@/assets/waxing.png";
 
 export default function Home() {
   const container = {
@@ -169,7 +170,7 @@ export default function Home() {
               },
               { 
                 name: "Waxing", 
-                img: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=2070&auto=format&fit=crop" 
+                img: waxingImg 
               },
               { 
                 name: "Brows & Lashes", 
