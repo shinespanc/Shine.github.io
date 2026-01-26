@@ -58,8 +58,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="/" className="font-display text-2xl md:text-3xl font-bold text-foreground">
-              Shine<span className="text-primary">.</span>
+            <Link href="/" className="font-display text-xl md:text-2xl font-bold text-foreground">
+              Shine Beauty Salon and Spa
             </Link>
 
             {/* Desktop Nav */}
@@ -128,7 +128,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             <div>
-              <h3 className="font-display text-2xl font-bold mb-4">Shine<span className="text-primary">.</span></h3>
+              <h3 className="font-display text-xl font-bold mb-4">Shine Beauty Salon and Spa</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 Your go-to beauty destination in High Point, NC. We are dedicated to providing you with the highest quality service in a warm and relaxing environment.
               </p>
