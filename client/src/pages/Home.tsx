@@ -3,6 +3,7 @@ import { BookingButton } from "@/components/BookingButton";
 import { ArrowRight, Star, Sparkles, Heart } from "lucide-react";
 import { Link } from "wouter";
 import waxingImg from "@/assets/waxing.png";
+import browsLashesImg from "@/assets/brows_lashes.png";
 
 export default function Home() {
   const container = {
@@ -174,7 +175,7 @@ export default function Home() {
               },
               { 
                 name: "Brows & Lashes", 
-                img: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=2069&auto=format&fit=crop" 
+                img: browsLashesImg 
               }
             ].map((service, idx) => (
               <Link key={idx} href="/services">
