@@ -35,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Phone className="w-3 h-3" /> (336) 309-1065
             </a>
             <span className="hidden sm:flex items-center gap-1">
-              <MapPin className="w-3 h-3" /> High Point, NC
+              <MapPin className="w-3 h-3" /> 2402 Hickswood Rd #108, High Point, NC 27265
             </span>
           </div>
           <div className="flex gap-3">
@@ -130,7 +130,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
             <div>
               <h3 className="font-display text-xl font-bold mb-4">Shine Beauty Salon and Spa</h3>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                Your go-to beauty destination in High Point, NC. We are dedicated to providing you with the highest quality service in a warm and relaxing environment.
+                Your go-to beauty destination in High Point, NC at 2402 Hickswood Rd #108. We are dedicated to providing you with the highest quality service in a warm and relaxing environment.
               </p>
               <div className="flex gap-4">
                 <a href="https://www.facebook.com/groups/906064359948904/posts/1957466918141971/" target="_blank" rel="noreferrer" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors shadow-sm">
@@ -162,7 +162,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                   <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                   <span>
                     Shine Beauty Salon & Spa<br />
-                    High Point, NC
+                    2402 Hickswood Rd #108<br />
+                    High Point, NC 27265
                   </span>
                 </li>
                 <li className="flex items-center gap-3 text-muted-foreground">

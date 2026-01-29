@@ -44,7 +44,8 @@ export default function Contact() {
                   <p className="text-muted-foreground mb-2">Visit our salon in High Point</p>
                   <p className="text-lg font-medium text-foreground">
                     Shine Beauty Salon & Spa<br />
-                    High Point, NC
+                    2402 Hickswood Rd #108<br />
+                    High Point, NC 27265
                   </p>
                 </div>
               </div>
