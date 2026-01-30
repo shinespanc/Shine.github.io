@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Facial",
+    "description": "Deep cleansing facial to refresh your skin.",
+    "price": "$65",
+    "service_type": "Facial"
+  },
+  {
+    "id": 2,
+    "name": "Anti-Aging Facial",
+    "description": "Rejuvenating treatment to reduce fine lines.",
+    "price": "$85",
+    "service_type": "Facial"
+  },
+  {
+    "id": 3,
+    "name": "Full Leg Waxing",
+    "description": "Complete leg hair removal for smooth skin.",
+    "price": "$50",
+    "service_type": "Waxing"
+  },
+  {
+    "id": 4,
+    "name": "Eyebrow Threading",
+    "description": "Precise eyebrow shaping.",
+    "price": "$12",
+    "service_type": "Threading"
+  },
+  {
+    "id": 5,
+    "name": "Swedish Massage",
+    "description": "Full body relaxing massage.",
+    "price": "$75",
+    "service_type": "Massage"
+  },
+  {
+    "id": 6,
+    "name": "Henna Design",
+    "description": "Beautiful traditional henna for hands.",
+    "price": "$25",
+    "service_type": "Hands Henna"
+  }
+]
