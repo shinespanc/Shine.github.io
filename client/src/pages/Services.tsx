@@ -29,14 +29,18 @@ export default function Services() {
         // Use a small timeout to ensure the accordion has started expanding
         // and the DOM element is available for scrolling
         setTimeout(() => {
-          const element = document.querySelector(`[value="${itemId}"]`);
+          const element = document.getElementById(itemId);
           if (element) {
-            element.scrollIntoView({ 
-              behavior: 'smooth', 
-              block: 'center' 
+            // Scroll to the element and center it
+            const yOffset = -window.innerHeight / 4; // Offset to help center better
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            
+            window.scrollTo({
+              top: y,
+              behavior: 'smooth'
             });
           }
-        }, 300);
+        }, 600);
       }
     }
   }, [search]);
@@ -73,48 +77,52 @@ export default function Services() {
           onValueChange={setActiveItem}
           className="w-full space-y-4 border-none"
         >
-          {sortedCategories.map((group, idx) => (
-            <AccordionItem 
-              key={group.service_type} 
-              value={`item-${idx}`}
-              className="border border-border rounded-2xl overflow-hidden bg-white px-6 shadow-sm data-[state=open]:shadow-md transition-all"
-            >
-              <AccordionTrigger className="hover:no-underline py-6">
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-primary text-left">
-                  {group.service_type}
-                </h2>
-              </AccordionTrigger>
-              <AccordionContent className="pb-8">
-                <div className="grid grid-cols-1 gap-6 pt-4">
-                  {group.services
-                    .filter(service => service.service_name) // Filter out null services
-                    .map((service, sIdx) => (
-                    <div 
-                      key={`${group.service_type}-${sIdx}`} 
-                      className="group flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-xl bg-muted/30 border border-border/50 hover:bg-muted/50 transition-colors"
-                    >
-                      <div className="flex-grow pr-4">
-                        <div className="flex items-baseline justify-between mb-2">
-                          <h3 className="text-xl font-bold font-display text-foreground uppercase tracking-tight">{service.service_name}</h3>
-                          <span className="text-lg font-semibold text-primary sm:hidden">
+          {sortedCategories.map((group, idx) => {
+            const itemId = `item-${idx}`;
+            return (
+              <AccordionItem 
+                key={group.service_type} 
+                value={itemId}
+                id={itemId}
+                className="border border-border rounded-2xl overflow-hidden bg-white px-6 shadow-sm data-[state=open]:shadow-md transition-all"
+              >
+                <AccordionTrigger className="hover:no-underline py-6">
+                  <h2 className="font-display text-2xl md:text-3xl font-bold text-primary text-left">
+                    {group.service_type}
+                  </h2>
+                </AccordionTrigger>
+                <AccordionContent className="pb-8">
+                  <div className="grid grid-cols-1 gap-6 pt-4">
+                    {group.services
+                      .filter(service => service.service_name) // Filter out null services
+                      .map((service, sIdx) => (
+                      <div 
+                        key={`${group.service_type}-${sIdx}`} 
+                        className="group flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-xl bg-muted/30 border border-border/50 hover:bg-muted/50 transition-colors"
+                      >
+                        <div className="flex-grow pr-4">
+                          <div className="flex items-baseline justify-between mb-2">
+                            <h3 className="text-xl font-bold font-display text-foreground uppercase tracking-tight">{service.service_name}</h3>
+                            <span className="text-lg font-semibold text-primary sm:hidden">
+                              {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
+                            </span>
+                          </div>
+                          {service.description && (
+                            <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">{service.description}</p>
+                          )}
+                        </div>
+                        <div className="hidden sm:block text-right min-w-[120px]">
+                          <span className="block text-xl font-bold text-primary">
                             {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
                           </span>
                         </div>
-                        {service.description && (
-                          <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">{service.description}</p>
-                        )}
                       </div>
-                      <div className="hidden sm:block text-right min-w-[120px]">
-                        <span className="block text-xl font-bold text-primary">
-                          {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-          ))}
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            );
+          })}
         </Accordion>
       </div>
 
