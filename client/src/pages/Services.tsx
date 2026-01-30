@@ -23,7 +23,20 @@ export default function Services() {
       // Find the index of the category in the sorted list
       const index = order.indexOf(category);
       if (index !== -1) {
-        setActiveItem(`item-${index}`);
+        const itemId = `item-${index}`;
+        setActiveItem(itemId);
+        
+        // Use a small timeout to ensure the accordion has started expanding
+        // and the DOM element is available for scrolling
+        setTimeout(() => {
+          const element = document.querySelector(`[value="${itemId}"]`);
+          if (element) {
+            element.scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'center' 
+            });
+          }
+        }, 300);
       }
     }
   }, [search]);
