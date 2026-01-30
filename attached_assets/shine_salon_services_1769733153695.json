@@ -11,7 +11,7 @@
         },
         {
           "type": "Full Facials",
-          "service_name": "LED Light Therapy Facial",
+          "service_name": "LED Light Therapy Facial\n",
           "description": null,
           "price": 90.0
         },
@@ -62,6 +62,30 @@
           "service_name": "Microdermabrasion",
           "description": null,
           "price": 90.0
+        },
+        {
+          "type": "Full Facials",
+          "service_name": null,
+          "description": null,
+          "price": null
+        },
+        {
+          "type": "Full Facials",
+          "service_name": null,
+          "description": null,
+          "price": null
+        },
+        {
+          "type": "Full Facials",
+          "service_name": null,
+          "description": null,
+          "price": null
+        },
+        {
+          "type": "Full Facials",
+          "service_name": null,
+          "description": null,
+          "price": null
         }
       ]
     },
@@ -175,6 +199,12 @@
           "service_name": "Full Body",
           "description": "A comprehensive waxing service covering multiple areas of the body for head-to-toe smoothness. Ideal for those looking for complete hair removal in one session. Leaves skin silky and polished.",
           "price": "Starting at $250.00"
+        },
+        {
+          "type": "Waxing",
+          "service_name": "Bikini Line",
+          "description": "A targeted service that cleans up hair along the bikini edges for a neat and natural look. Perfect for maintaining smoothness while keeping a subtle finish. Gentle on sensitive skin.",
+          "price": 35.0
         }
       ]
     },
@@ -201,7 +231,7 @@
         },
         {
           "type": "Threading",
-          "service_name": "Lips",
+          "service_name": "Lips  ",
           "description": "A delicate threading service that precisely removes unwanted hair from the upper lip area. Leaves skin smooth, refined, and makeup-ready without the use of chemicals. Ideal for sensitive skin types.",
           "price": 5.0
         },
