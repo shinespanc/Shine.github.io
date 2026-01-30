@@ -1,35 +1,28 @@
-import { useServices } from "@/hooks/use-services";
 import { motion } from "framer-motion";
-import { Loader2, ArrowRight } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { BookingButton } from "@/components/BookingButton";
+import servicesData from "@/resources/services.json";
 
 export default function Services() {
-  const { data: services, isLoading, error } = useServices();
+  // Service type order as requested
+  const order = ["Facial", "Waxing", "Threading", "Massage", "Hands Henna"];
 
-  if (isLoading) {
-    return (
-      <div className="min-h-[60vh] flex items-center justify-center">
-        <Loader2 className="w-8 h-8 animate-spin text-primary" />
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-[60vh] flex items-center justify-center text-destructive">
-        Failed to load services. Please try again later.
-      </div>
-    );
-  }
-
-  // Group services by category
-  const categories = services?.reduce((acc, service) => {
-    if (!acc[service.category]) {
-      acc[service.category] = [];
+  // Group services by service_type from JSON source
+  const categories = servicesData.reduce((acc, service) => {
+    const type = service.service_type;
+    if (!acc[type]) {
+      acc[type] = [];
     }
-    acc[service.category].push(service);
+    acc[type].push(service);
     return acc;
-  }, {} as Record<string, typeof services>) || {};
+  }, {} as Record<string, typeof servicesData>);
+
+  // Sort categories based on requested order
+  const sortedCategories = Object.entries(categories).sort(([a], [b]) => {
+    const indexA = order.indexOf(a);
+    const indexB = order.indexOf(b);
+    return (indexA === -1 ? 99 : indexA) - (indexB === -1 ? 99 : indexB);
+  });
 
   return (
     <div className="w-full bg-background pb-24">
@@ -44,7 +37,7 @@ export default function Services() {
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 space-y-24">
-        {Object.entries(categories).map(([category, items], idx) => (
+        {sortedCategories.map(([category, items], idx) => (
           <motion.div
             key={category}
             initial={{ opacity: 0, y: 20 }}
@@ -65,7 +58,7 @@ export default function Services() {
                 >
                   <div className="flex-grow pr-4">
                     <div className="flex items-baseline justify-between mb-2">
-                      <h3 className="text-xl font-bold font-display text-foreground">{service.name}</h3>
+                      <h3 className="text-xl font-bold font-display text-foreground uppercase tracking-tight">{service.name}</h3>
                       <span className="text-lg font-semibold text-primary sm:hidden">{service.price}</span>
                     </div>
                     {service.description && (
@@ -78,17 +71,13 @@ export default function Services() {
                 </div>
               ))}
             </div>
-            
-            <div className="mt-8 text-center sm:text-left">
-              <BookingButton variant="outline" className="text-sm px-4 py-2" />
-            </div>
           </motion.div>
         ))}
       </div>
 
       <div className="max-w-7xl mx-auto px-4 mt-24 text-center">
         <div className="bg-primary/5 rounded-3xl p-12">
-          <h3 className="font-display text-2xl font-bold mb-4">Don't see what you're looking for?</h3>
+          <h3 className="font-display text-2xl font-bold mb-4">Ready for your appointment?</h3>
           <p className="text-muted-foreground mb-8">
             Check our booking platform for the most up-to-date list of services, specials, and packages.
           </p>
