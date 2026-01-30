@@ -6,61 +6,61 @@
         {
           "type": "Full Facials",
           "service_name": "Hydro Glowskin Brightening Facial",
-          "description": null,
+          "description": "This advanced facial combines hydra dermabrasion, micro-current technology, LED light therapy, and radio frequency for visibly brighter and firmer skin. It deeply cleanses, hydrates, and rejuvenates while improving fine lines, wrinkles, and skin texture. The treatment promotes skin tightening and lifting for a radiant, youthful glow. Ideal for dull, tired, or aging skin.",
           "price": 150.0
         },
         {
           "type": "Full Facials",
           "service_name": "LED Light Therapy Facial",
-          "description": null,
+          "description": "This non-invasive facial uses targeted LED light to treat a variety of skin concerns including acne, pigmentation, wrinkles, rosacea, and sun damage. The therapy stimulates collagen production and supports skin healing at a cellular level. It helps calm inflammation while improving tone and texture. Suitable for all skin types, including sensitive skin.",
           "price": 90.0
         },
         {
           "type": "Full Facials",
           "service_name": "Microdermabrasion Facial",
-          "description": null,
+          "description": "A gentle yet effective exfoliating treatment that removes dead skin cells to reveal smoother, brighter skin. This facial helps reduce the appearance of fine lines, mild acne scars, enlarged pores, and uneven texture. It also boosts circulation and enhances product absorption. Perfect for refreshing dull or congested skin.",
           "price": 90.0
         },
         {
           "type": "Full Facials",
           "service_name": "Advanced Exfoliation - Pumpkin Facial",
-          "description": null,
+          "description": "This powerful exfoliating facial uses natural pumpkin enzymes and antioxidants to resurface and renew the skin. It is designed to improve signs of aging, acne, and hyperpigmentation while promoting a healthy glow. The treatment boosts cell turnover and refines skin texture. Ideal for those seeking visible results with minimal downtime.",
           "price": 80.0
         },
         {
           "type": "Full Facials",
           "service_name": "Hyperpigmentation/ Melasma Facial",
-          "description": null,
+          "description": "This targeted facial is designed to reduce dark spots, uneven skin tone, and melasma. It combines gentle exfoliation, brightening ingredients, and soothing techniques to promote a more even complexion. Regular treatments help improve clarity and restore skin radiance. Suitable for pigmentation-prone and sun-damaged skin.",
           "price": 80.0
         },
         {
           "type": "Full Facials",
           "service_name": "Acne Skin Treatment Facial",
-          "description": null,
+          "description": "A deep-cleansing facial specifically formulated to treat acne-prone and congested skin. It focuses on purifying pores, reducing excess oil, calming inflammation, and preventing future breakouts. The treatment helps improve skin clarity while supporting healing. Ideal for teens and adults struggling with acne.",
           "price": 80.0
         },
         {
           "type": "Full Facials",
           "service_name": "Back Facial",
-          "description": null,
+          "description": "This relaxing and results-driven treatment provides complete care for the back. It includes steaming, deep cleansing, exfoliation, extractions (if needed), and a soothing back and neck massage. Designed to treat acne, dryness, and congestion, it leaves your skin smooth and refreshed. Perfect for special occasions or regular maintenance.",
           "price": 75.0
         },
         {
           "type": "Full Facials",
           "service_name": "Facial with Extractions",
-          "description": null,
+          "description": "This customized facial includes thorough cleansing, exfoliation, and professional extractions to remove blackheads and whiteheads safely. It helps unclog pores, reduce breakouts, and improve skin texture. The treatment finishes with calming and hydrating products to soothe the skin. Ideal for congested or combination skin.",
           "price": 60.0
         },
         {
           "type": "Full Facials",
           "service_name": "Classic( No black heads & white head removal)",
-          "description": null,
+          "description": "A relaxing and nourishing facial designed to refresh and hydrate the skin without extractions. It includes cleansing, exfoliation, massage, and a customized mask to improve skin health and glow. Perfect for maintaining healthy skin or first-time facial clients. Suitable for all skin types.",
           "price": 50.0
         },
         {
           "type": "Full Facials",
           "service_name": "Microdermabrasion",
-          "description": null,
+          "description": "This standalone exfoliation treatment gently resurfaces the skin to improve tone, texture, and clarity. It helps reduce fine lines, sun damage, mild scarring, and pigmentation. The procedure stimulates collagen production and enhances skin brightness. Ideal for clients seeking smoother, more radiant skin.",
           "price": 90.0
         }
       ]
