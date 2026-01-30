@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
-import { Loader2 } from "lucide-react";
 import { BookingButton } from "@/components/BookingButton";
 import servicesData from "@/resources/services.json";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Services() {
   // Service type order as requested: Facials (Full Facials), Waxing, Threading, Massage, Hands Henna
@@ -28,49 +33,51 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 space-y-24">
-        {sortedCategories.map((group, idx) => (
-          <motion.div
-            key={group.service_type}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: idx * 0.1 }}
-          >
-            <div className="flex items-center gap-4 mb-8">
-              <h2 className="font-display text-3xl font-bold text-primary">{group.service_type}</h2>
-              <div className="h-px bg-border flex-grow"></div>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6">
-              {group.services
-                .filter(service => service.service_name) // Filter out null services
-                .map((service, sIdx) => (
-                <div 
-                  key={`${group.service_type}-${sIdx}`} 
-                  className="group flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-xl bg-white border border-border shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="flex-grow pr-4">
-                    <div className="flex items-baseline justify-between mb-2">
-                      <h3 className="text-xl font-bold font-display text-foreground uppercase tracking-tight">{service.service_name}</h3>
-                      <span className="text-lg font-semibold text-primary sm:hidden">
-                        {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
-                      </span>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+        <Accordion type="single" collapsible className="w-full space-y-4 border-none">
+          {sortedCategories.map((group, idx) => (
+            <AccordionItem 
+              key={group.service_type} 
+              value={`item-${idx}`}
+              className="border border-border rounded-2xl overflow-hidden bg-white px-6 shadow-sm data-[state=open]:shadow-md transition-all"
+            >
+              <AccordionTrigger className="hover:no-underline py-6">
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-primary text-left">
+                  {group.service_type}
+                </h2>
+              </AccordionTrigger>
+              <AccordionContent className="pb-8">
+                <div className="grid grid-cols-1 gap-6 pt-4">
+                  {group.services
+                    .filter(service => service.service_name) // Filter out null services
+                    .map((service, sIdx) => (
+                    <div 
+                      key={`${group.service_type}-${sIdx}`} 
+                      className="group flex flex-col sm:flex-row sm:items-center justify-between p-6 rounded-xl bg-muted/30 border border-border/50 hover:bg-muted/50 transition-colors"
+                    >
+                      <div className="flex-grow pr-4">
+                        <div className="flex items-baseline justify-between mb-2">
+                          <h3 className="text-xl font-bold font-display text-foreground uppercase tracking-tight">{service.service_name}</h3>
+                          <span className="text-lg font-semibold text-primary sm:hidden">
+                            {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
+                          </span>
+                        </div>
+                        {service.description && (
+                          <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">{service.description}</p>
+                        )}
+                      </div>
+                      <div className="hidden sm:block text-right min-w-[120px]">
+                        <span className="block text-xl font-bold text-primary">
+                          {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
+                        </span>
+                      </div>
                     </div>
-                    {service.description && (
-                      <p className="text-muted-foreground text-sm leading-relaxed max-w-xl">{service.description}</p>
-                    )}
-                  </div>
-                  <div className="hidden sm:block text-right min-w-[120px]">
-                    <span className="block text-xl font-bold text-primary">
-                      {typeof service.price === 'number' ? `$${service.price.toFixed(2)}` : service.price}
-                    </span>
-                  </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </motion.div>
-        ))}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 mt-24 text-center">
