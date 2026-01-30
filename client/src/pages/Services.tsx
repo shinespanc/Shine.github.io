@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { BookingButton } from "@/components/BookingButton";
 import servicesData from "@/resources/services.json";
@@ -9,6 +10,10 @@ import {
 } from "@/components/ui/accordion";
 
 export default function Services() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Service type order as requested: Facials (Full Facials), Waxing, Threading, Massage, Hands Henna
   const order = ["Full Facials", "Waxing", "Threading", "Massage", "Hands Heena ( Mehndi) Tattoo"];
 
