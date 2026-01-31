@@ -9,7 +9,7 @@ A beautiful website for Shine Beauty Salon & Spa located in High Point, NC.
 1. **Push these files to your GitHub repository** - Make sure the `docs` folder is committed and pushed to your `main` branch
 
 2. **Configure GitHub Pages settings:**
-   - Go to your repository: https://github.com/dev-manasi/Shine.github.io
+   - Go to your repository: https://github.com/shinespanc/shinespanc.github.io
    - Click **Settings** → **Pages**
    - Under "Build and deployment":
      - Source: **Deploy from a branch**
@@ -17,7 +17,7 @@ A beautiful website for Shine Beauty Salon & Spa located in High Point, NC.
      - Folder: **/docs**
    - Click **Save**
 
-3. Wait a few minutes for GitHub to deploy, then visit https://dev-manasi.github.io/Shine.github.io/
+3. Wait a few minutes for GitHub to deploy, then visit https://shinespanc.github.io/
 
 ### Updating the Site
 
