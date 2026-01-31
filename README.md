@@ -4,7 +4,7 @@ A beautiful website for Shine Beauty Salon & Spa located in High Point, NC.
 
 ## GitHub Pages Deployment
 
-### Initial Setup
+### Initial Setup 
 
 1. **Push these files to your GitHub repository** - Make sure the `docs` folder is committed and pushed to your `main` branch
 
