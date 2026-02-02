@@ -1,20 +1,43 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 
+import img4 from "@assets/image4_1770076506403.jpeg";
+import img5 from "@assets/image5_1770076506403.jpeg";
+import img6 from "@assets/image6_1770076506404.jpeg";
+import img7 from "@assets/image7_1770076506404.jpeg";
+import img8 from "@assets/image8_1770076506404.jpeg";
+import img9 from "@assets/image9_1770076506405.jpeg";
+import img22 from "@assets/image22_1770076506405.jpeg";
+import img23 from "@assets/image23_1770076506406.jpeg";
+import img24 from "@assets/image24_1770076506406.jpeg";
+import img25 from "@assets/image25_1770076506407.jpeg";
+import img27 from "@assets/image27_1770076506407.jpeg";
+import img29 from "@assets/image29_1770076506407.jpeg";
+import img31 from "@assets/image31_1770076506407.jpeg";
+import img3 from "@assets/image3_1770076506408.jpeg";
+
 const images = [
-  // Manicure / Nails
-  "https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=2070&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1519014816548-bf5fe059e98b?q=80&w=2070&auto=format&fit=crop",
-  // Facial / Spa
-  "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?q=80&w=2070&auto=format&fit=crop",
-  // Interior / Vibe
-  "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=2070&auto=format&fit=crop",
-  // Makeup / Brows
-  "https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=2069&auto=format&fit=crop",
-  // Pedicure
-  "https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?q=80&w=2070&auto=format&fit=crop"
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img22,
+  img23,
+  img24,
+  img25,
+  img27,
+  img29,
+  img31,
+  img3
 ];
 
 export default function Gallery() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="w-full bg-background pb-24">
        {/* Header */}
@@ -40,7 +63,7 @@ export default function Gallery() {
             >
               <img
                 src={src}
-                alt={`Gallery image ${idx + 1}`}
+                alt={`Shine Beauty Salon - Gallery image ${idx + 1}`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
