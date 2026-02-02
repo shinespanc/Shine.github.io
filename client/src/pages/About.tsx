@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { BookingButton } from "@/components/BookingButton";
 import { CheckCircle2, Facebook, Instagram } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
+import shammiImg from "@assets/image2_1770075682235.jpeg";
 
 export default function About() {
   useEffect(() => {
@@ -74,10 +75,9 @@ export default function About() {
             className="order-1 md:order-2 relative"
           >
             <div className="relative aspect-square rounded-full overflow-hidden border-8 border-white shadow-2xl max-w-md mx-auto">
-               {/* Placeholder for Owner Image - using a professional portrait from Unsplash */}
               <img 
-                src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?q=80&w=2080&auto=format&fit=crop" 
-                alt="Shammi Sharma - Owner" 
+                src={shammiImg} 
+                alt="Shammi Sharma - Owner of Shine Beauty Salon & Spa" 
                 className="w-full h-full object-cover"
               />
             </div>
