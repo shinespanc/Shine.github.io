@@ -7,7 +7,7 @@ import threadingImg from "@/assets/threading.png";
 import massageImg from "@/assets/massage.png";
 import browsLashesImg from "@/assets/brows_lashes.png";
 import shammiImg from "@assets/image1_1770075374241.jpeg";
-import heroImg from "@assets/image25_1770075846034.jpeg";
+import heroImg from "@assets/image29_1770076038079.jpeg";
 
 export default function Home() {
   const container = {
