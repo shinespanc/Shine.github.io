@@ -6,6 +6,7 @@ import waxingImg from "@/assets/waxing.png";
 import threadingImg from "@/assets/threading.png";
 import massageImg from "@/assets/massage.png";
 import browsLashesImg from "@/assets/brows_lashes.png";
+import shammiImg from "@assets/image1_1770075374241.jpeg";
 
 export default function Home() {
   const container = {
@@ -120,10 +121,9 @@ export default function Home() {
               className="w-full md:w-1/2 relative"
             >
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-                {/* Unsplash image: Professional makeup artist or salon owner vibe */}
                 <img 
-                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=2071&auto=format&fit=crop" 
-                  alt="Beauty Treatment" 
+                  src={shammiImg} 
+                  alt="Shammi Sharma - Owner of Shine Beauty Salon & Spa" 
                   className="w-full h-full object-cover"
                 />
               </div>
