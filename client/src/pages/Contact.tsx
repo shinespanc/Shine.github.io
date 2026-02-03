@@ -63,12 +63,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg mb-1">Hours</h3>
                   <div className="grid grid-cols-[100px_1fr] gap-2 text-muted-foreground">
-                    <span>Tue - Sat:</span>
+                    <span>Mon - Sat:</span>
                     <span className="font-medium text-foreground">10:00 AM - 7:00 PM</span>
                     <span>Sun:</span>
-                    <span className="font-medium text-foreground">12:00 PM - 5:00 PM</span>
-                    <span>Mon:</span>
-                    <span className="font-medium text-foreground">Closed</span>
+                    <span className="font-medium text-foreground">By appointment only</span>
                   </div>
                 </div>
               </div>
