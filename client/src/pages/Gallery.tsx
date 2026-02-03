@@ -74,9 +74,11 @@ export default function Gallery() {
         <div className="mt-16 text-center">
           <p className="text-muted-foreground">Follow us on social media for more daily updates!</p>
           <div className="mt-4 flex justify-center gap-4">
+            <a href="https://www.facebook.com/groups/906064359948904/posts/1957466918141971/" target="_blank" className="font-semibold text-primary hover:underline">Facebook</a>
+            <span className="text-muted-foreground">•</span>
             <a href="https://www.instagram.com/shinebeauty459/" target="_blank" className="font-semibold text-primary hover:underline">Instagram</a>
             <span className="text-muted-foreground">•</span>
-            <a href="https://www.facebook.com/groups/906064359948904/posts/1957466918141971/" target="_blank" className="font-semibold text-primary hover:underline">Facebook</a>
+            <a href="https://www.tiktok.com/@shinebeautysalonandnail" target="_blank" className="font-semibold text-primary hover:underline">TikTok</a>
           </div>
         </div>
       </div>
