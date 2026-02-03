@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BookingButton } from "@/components/BookingButton";
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
+import mapImage from "@assets/image_1770079104930.png";
 
 export default function Contact() {
   useEffect(() => {
@@ -90,11 +91,10 @@ export default function Contact() {
 
           {/* Map / Image */}
           <div className="h-full min-h-[400px] rounded-3xl overflow-hidden shadow-lg border border-border relative bg-muted">
-            {/* Using a static map image for aesthetics, would normally embed Google Maps iframe */}
             <img 
-              src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=2069&auto=format&fit=crop" 
-              alt="Map Location Placeholder" 
-              className="w-full h-full object-cover opacity-80"
+              src={mapImage}
+              alt="Shine Beauty Salon & Spa Location Map" 
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black/10">
                <a 
