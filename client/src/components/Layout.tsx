@@ -157,7 +157,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <ul className="space-y-3">
                 {navLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+                    <Link href={link.href} onClick={() => window.scrollTo(0, 0)} className="text-muted-foreground hover:text-primary transition-colors">
                       {link.label}
                     </Link>
                   </li>
