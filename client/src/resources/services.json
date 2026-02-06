@@ -95,6 +95,116 @@
         }
       ]
     },
+
+    {
+      "service_type": "Nail Services",
+      "services": [
+        {
+          "type": "Nail Services",
+          "service_name": "Regular Pedicure , Classic pedicure",
+          "description": "This classic pedicure includes a soothing foot soak, meticulous nail and cuticle care, gentle exfoliation, a nourishing mask, and a regular polish application. Leaves feet clean, refreshed, and well-groomed.",
+          "price": 35.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Deluxe Pedicure",
+          "description": "Indulge in our Deluxe Pedicure featuring a relaxing foot soak, detailed nail and cuticle care, and revitalizing exfoliation. Finished with a calming massage, paraffin wax treatment, and your choice of polish for soft, beautifully polished feet.",
+          "price": 45.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Jelly Luxury Collagen Pedicure",
+          "description": "This indulgent pedicure combines the soothing benefits of a warm jelly soak with collagen-infused treatments to deeply hydrate and soften the skin. Designed to relax and rejuvenate tired feet, it leaves them silky smooth and refreshed. Includes paraffin wax and hot stone massage for ultimate comfort.",
+          "price": 65.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Ultimate Pedicure",
+          "description": "A luxurious, head-to-toe foot treatment beginning with a calming soak and thorough exfoliation. Followed by a soothing massage and finished with flawless polish application, this pedicure enhances both the health and beauty of your feet. Includes paraffin wax for added hydration.",
+          "price": 55.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Volcano Luxury Spa Pedicure",
+          "description": "Experience the ultimate in foot pampering with our Volcano Luxury Spa Pedicure, featuring an 8-step treatment enriched with collagen. This rejuvenating service deeply hydrates, softens, and revitalizes the skin while promoting total relaxation. Includes paraffin wax and hot stone massage for a spa-level experience.",
+          "price": 70.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Paraffin wax(add on)",
+          "description": "A deeply moisturizing treatment that softens dry skin and calluses while improving circulation. Helps relieve joint stiffness, soothe aching muscles, and promote relaxation. Ideal for healing minor cracks and restoring smoothness.",
+          "price": 8.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Hot Stone Massage",
+          "description": "Warm stones are used to relieve muscle tension, reduce stress, and improve circulation. This therapeutic add-on promotes deep relaxation, pain relief, and better sleep while supporting detoxification.",
+          "price": 5.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Regular Manicure",
+          "description": "This manicure includes nail shaping, cuticle care, buffing, a light hydrating scrub, nourishing mask, and regular polish application. Leaves hands soft, clean, and beautifully groomed.",
+          "price": 27.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Spa Manicure & Pedicure",
+          "description": "Treat your hands and feet to the ultimate pampering experience with our spa manicure and pedicure. This luxurious service focuses on deep relaxation, hydration, and meticulous care for beautifully polished results.",
+          "price": 75.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Polish Change Hands",
+          "description": "TRefresh your look with a gel or regular polish change on hands. Perfect for maintaining a clean, polished appearance between services.",
+          "price": "Gel: $20.00, Regular:$10.00"
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Poolish Change Feet",
+          "description": "A quick refresh with your choice of gel or regular polish on feet. Ideal for maintaining beautifully polished toes.",
+          "price": "Gel: $25.00, Regular:$15.00"
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Gel Removal",
+          "description": "Professional gel polish removal for hands or feet, performed safely to protect nail health.",
+          "price": 5.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Soak Off Only (Foreign)",
+          "description": "Removal service for foreign acrylic, SNS, or similar nail enhancements. Designed to gently remove product while minimizing nail damage.",
+          "price": 15.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "SNS (without Tips)",
+          "description": "SNS dip powder application over natural nails for a durable, lightweight finish. Provides strength, shine, and long-lasting wear.",
+          "price": 37.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "SNS with Tips",
+          "description": "SNS dip powder service with nail tips to add length and strength. Creates a smooth, polished look with extended wear.",
+          "price": "$42 & up"
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Gel Manicure",
+          "description": "This gel manicure includes detailed cuticle care, shaping, buffing, exfoliation, and a nourishing mask. Finished with long-lasting gel polish for a glossy, chip-resistant finish.",
+          "price": 35.0
+        },
+        {
+          "type": "Nail Services",
+          "service_name": "Additional Services",
+          "description": "For more nail services and detailed offerings, please visit www.vagaro.com/shinebeautysalonspa or call 336-905-5616 for assistance.",
+          "price": "See website"
+        }
+      ]
+    },
+
+    
     {
       "service_type": "Waxing",
       "services": [
@@ -319,7 +429,7 @@
           "type": "Hair",
           "service_name": "Hair Services",
           "description": "Hair services are available by appointment only. Please call the salon directly to schedule your visit and receive personalized assistance from our team.",
-          "price": "Call for pricing"
+          "price": "call for pricing"
         }
       ]
     }
