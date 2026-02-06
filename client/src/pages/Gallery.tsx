@@ -16,21 +16,62 @@ import img29 from "@assets/image29_1770076506407.jpeg";
 import img31 from "@assets/image31_1770076506407.jpeg";
 import img3 from "@assets/image3_1770076506408.jpeg";
 
+import newImg0 from "@assets/image0_1770338592824.jpeg";
+import newImg1 from "@assets/image1_1770338592827.jpeg";
+import newImg2 from "@assets/image2_1770338592828.jpeg";
+import newImg3 from "@assets/image3_1770338592829.jpeg";
+import newImg4 from "@assets/image4_1770338592830.jpeg";
+import newImg6 from "@assets/image6_1770338592831.jpeg";
+import newImg7 from "@assets/image7_1770338592832.jpeg";
+import newImg8 from "@assets/image8_1770338592832.jpeg";
+import newImg9 from "@assets/image9_1770338592833.jpeg";
+import newImg12 from "@assets/image12_1770338592834.jpeg";
+import newImg13 from "@assets/image13_1770338592836.jpeg";
+import newImg14 from "@assets/image14_1770338592815.jpeg";
+import newImg15 from "@assets/image15_1770338592816.jpeg";
+import newImg16 from "@assets/image16_1770338592818.jpeg";
+import newImg17 from "@assets/image17_1770338592819.jpeg";
+import newImg18 from "@assets/image18_1770338592821.jpeg";
+import newImg19 from "@assets/image19_1770338592821.jpeg";
+import newImg20 from "@assets/image20_1770338592826.jpeg";
+import newImg27 from "@assets/image27_1770338592822.jpeg";
+import newImg33 from "@assets/image33_1770338592826.jpeg";
+
 const images = [
+  newImg0,
   img4,
+  newImg8,
   img5,
-  img6,
-  img7,
-  img8,
-  img9,
+  newImg17,
   img22,
+  newImg4,
+  img6,
+  newImg14,
   img23,
+  newImg12,
+  img7,
+  newImg27,
   img24,
+  newImg18,
+  img8,
+  newImg20,
   img25,
+  newImg6,
+  img9,
+  newImg9,
   img27,
+  newImg16,
   img29,
+  newImg1,
   img31,
-  img3
+  newImg7,
+  img3,
+  newImg15,
+  newImg3,
+  newImg19,
+  newImg13,
+  newImg33,
+  newImg2,
 ];
 
 export default function Gallery() {
@@ -58,7 +99,7 @@ export default function Gallery() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.1 }}
+              transition={{ duration: 0.4, delay: idx * 0.05 }}
               className="group relative aspect-square overflow-hidden rounded-xl bg-muted"
             >
               <img
@@ -75,9 +116,9 @@ export default function Gallery() {
           <p className="text-muted-foreground">Follow us on social media for more daily updates!</p>
           <div className="mt-4 flex justify-center gap-4">
             <a href="https://www.facebook.com/groups/906064359948904/posts/1957466918141971/" target="_blank" className="font-semibold text-primary hover:underline">Facebook</a>
-            <span className="text-muted-foreground">•</span>
+            <span className="text-muted-foreground">&bull;</span>
             <a href="https://www.instagram.com/shinebeauty459/" target="_blank" className="font-semibold text-primary hover:underline">Instagram</a>
-            <span className="text-muted-foreground">•</span>
+            <span className="text-muted-foreground">&bull;</span>
             <a href="https://www.tiktok.com/@shinebeautysalonandnail" target="_blank" className="font-semibold text-primary hover:underline">TikTok</a>
           </div>
         </div>
