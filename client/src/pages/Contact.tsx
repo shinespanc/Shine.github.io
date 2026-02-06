@@ -38,15 +38,15 @@ export default function Contact() {
                   <p className="text-muted-foreground mb-2">For appointments and inquiries</p>
                   <div className="space-y-1">
                     <div className="flex items-center gap-2">
-                      <span className="text-sm text-muted-foreground w-16">Cell:</span>
-                      <a href="tel:336-309-1065" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
-                        (336) 309-1065
-                      </a>
-                    </div>
-                    <div className="flex items-center gap-2">
                       <span className="text-sm text-muted-foreground w-16">Business:</span>
                       <a href="tel:336-905-5616" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
                         (336) 905-5616
+                      </a>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm text-muted-foreground w-16">Cell:</span>
+                      <a href="tel:336-309-1065" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
+                        (336) 309-1065
                       </a>
                     </div>
                   </div>

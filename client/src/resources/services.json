@@ -308,7 +308,7 @@
           "type": "Makeup and Styling",
           "service_name": "Makeup & Hairstyle",
           "description": "Professional makeup and hairstyling services tailored for parties and special occasions. Whether you prefer a soft, natural look or a glamorous finish, our artists customize each style to enhance your features. Perfect for celebrations, events, and any occasion where you want to look and feel your best.",
-          "price": 20.0
+          "price": 120.0
         }
       ]
     },
@@ -319,7 +319,7 @@
           "type": "Hair",
           "service_name": "Hair Services",
           "description": "Hair services are available by appointment only. Please call the salon directly to schedule your visit and receive personalized assistance from our team.",
-          "price": 20.0
+          "price": "Call for pricing"
         }
       ]
     }

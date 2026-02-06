@@ -32,11 +32,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <div className="bg-foreground text-white py-2 px-4 text-xs md:text-sm">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="flex gap-4 items-center">
-            <a href="tel:336-309-1065" className="flex items-center gap-1 hover:text-secondary transition-colors">
-              <Phone className="w-3 h-3" /> Cell: (336) 309-1065
-            </a>
-            <a href="tel:336-905-5616" className="hidden md:flex items-center gap-1 hover:text-secondary transition-colors">
+            <a href="tel:336-905-5616" className="flex items-center gap-1 hover:text-secondary transition-colors">
               <Phone className="w-3 h-3" /> Business: (336) 905-5616
+            </a>
+            <a href="tel:336-309-1065" className="hidden md:flex items-center gap-1 hover:text-secondary transition-colors">
+              <Phone className="w-3 h-3" /> Cell: (336) 309-1065
             </a>
             <span className="hidden sm:flex items-center gap-1">
               <MapPin className="w-3 h-3" /> 2402 Hickswood Rd #108, High Point, NC 27265
@@ -179,8 +179,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <li className="flex items-center gap-3 text-muted-foreground">
                   <Phone className="w-5 h-5 text-primary shrink-0" />
                   <div className="flex flex-col">
-                    <a href="tel:336-309-1065" className="hover:text-primary transition-colors">Cell: (336) 309-1065</a>
                     <a href="tel:336-905-5616" className="hover:text-primary transition-colors">Business: (336) 905-5616</a>
+                    <a href="tel:336-309-1065" className="hover:text-primary transition-colors">Cell: (336) 309-1065</a>
                   </div>
                 </li>
                 <li className="pt-2">
