@@ -46,7 +46,7 @@ export default function Services() {
   }, [search]);
 
   // Service type order as requested: Facials (Full Facials), Waxing, Threading, Massage, Hands Henna
-  const order = ["Full Facials", "Waxing", "Threading", "Massage", "Hands Heena ( Mehndi) Tattoo"];
+  const order = ["Full Facials", "Nail Services", "Waxing", "Threading", "Massage", "Hands Heena ( Mehndi) Tattoo"];
 
   const categories = servicesData.spa_services;
 
